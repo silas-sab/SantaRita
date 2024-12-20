@@ -1,0 +1,552 @@
+/* Estilo geral */
+body {
+    background-color: #F8F9FA;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* LOGIN */
+
+/* Container principal */
+body#login-page .login-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Caixa de login */
+body#login-page .login-box {
+    background-color: #ffffff;
+    border: 1px solid #DEE2E6;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+/* Logotipo */
+body#login-page .logo-login {
+    width: 200px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+/* Campos de entrada */
+body#login-page .form-control {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #DEE2E6;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Botão de login */
+body#login-page .btn-login {
+    background-color: #131963;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+body#login-page .btn-login:hover {
+    background-color: #0F1452;
+}
+
+/* INDEX */
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 1px solid #DEE2E6;
+}
+
+.logo-header {
+    max-width: 150px;
+    height: auto;
+}
+
+/* BREADCRUMB */
+.breadcrumb-container {
+    background-color: #F8F9FA;
+    padding: 10px 20px;
+    text-align: left;
+    border-bottom: 1px solid #DEE2E6;
+    margin-bottom: 20px;
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.breadcrumb-link {
+    font-size: 14px;
+    font-weight: bold;
+    color: #131963;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.breadcrumb-link:hover {
+    color: #0F1452;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 768px) {
+    .breadcrumb-container {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .logo-header {
+        max-width: 120px;
+    }
+}
+
+/* Small Screens (Mobile Phones) */
+@media (max-width: 480px) {
+    .breadcrumb-container {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .logo-header {
+        max-width: 100px;
+    }
+}
+
+
+/* Barra de pesquisa - Padrão */
+body#home-page .search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    align-items: center;
+}
+
+body#home-page .search-input {
+    padding: 10px;
+    flex-grow: 1;
+    width: calc(100% - 120px); /* Considera o espaço do botão */
+    border: 1px solid #DEE2E6;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body#home-page .search-button {
+    background-color: #131963;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+body#home-page .search-button:hover {
+    background-color: #0F1452;
+}
+
+/* Responsividade */
+
+/* Tamanho XL (acima de 920px) */
+@media (min-width: 920px) {
+    body#home-page .search-bar {
+        max-width: 920px;
+    }
+
+    body#home-page .search-input {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    body#home-page .search-button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}
+
+/* Tamanho MD (entre 768px e 920px) */
+@media (min-width: 768px) and (max-width: 920px) {
+    body#home-page .search-bar {
+        max-width: 100%;
+        margin: 15px 20px;
+    }
+
+    body#home-page .search-input {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    body#home-page .search-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+/* Tamanho SM (menos de 768px) */
+@media (max-width: 767px) {
+    body#home-page .search-bar {
+        flex-direction: column;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    body#home-page .search-input {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    body#home-page .search-button {
+        width: 100%;
+        border-radius: 5px;
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
+/* Cartões de equipamento */
+body#home-page .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body#home-page .card {
+    background-color: white;
+    border: 1px solid #DEE2E6;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(50% - 20px);
+    max-width: 400px;
+    text-align: center;
+    padding: 10px 15px;
+    position: relative;
+}
+
+body#home-page .card-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #131963;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+body#home-page .card-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+body#home-page .btn-view {
+    background-color: #84C59D;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 2px auto 0 auto;
+    width: 100%;
+}
+
+body#home-page .btn-view:hover {
+    background-color: #6BAA81;
+}
+
+/* Responsividade */
+
+/* Tamanho XL (acima de 1200px) */
+@media (min-width: 1200px) {
+    body#home-page .card-container {
+        max-width: 1200px;
+        gap: 25px;
+    }
+
+    body#home-page .card {
+        width: calc(33.33% - 20px); /* Exibe 2 cards por linha */
+        max-width: 600px;
+    }
+
+    body#home-page .card-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    body#home-page .btn-view {
+        font-size: 18px;
+        padding: 12px;
+    }
+}
+
+/* Tamanho MD (entre 768px e 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    body#home-page .card-container {
+        max-width: 100%;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    body#home-page .card {
+        width: calc(50% - 15px); /* Exibe 2 cards por linha */
+        max-width: 300px;
+    }
+
+    body#home-page .card-title {
+        font-size: 20px;
+    }
+
+    body#home-page .btn-view {
+        font-size: 16px;
+    }
+}
+
+/* Tamanho SM (menos de 768px) */
+@media (max-width: 767px) {
+    body#home-page .card-container {
+        flex-direction: column;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    body#home-page .card {
+        width: 100%; /* Cada card ocupa a largura completa */
+        max-width: none;
+        margin: 0 auto;
+    }
+
+    body#home-page .card-title {
+        font-size: 18px;
+        text-align: center; /* Alinha o título no centro */
+    }
+
+    body#home-page .card-img {
+        margin-bottom: 10px;
+    }
+
+    body#home-page .btn-view {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+/* Estilos para a página de itens */
+body#item-page .header {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #DEE2E6;
+}
+
+body#item-page .logo-header {
+    max-width: 127px;
+    height: auto;
+}
+
+/* Breadcrumb */
+body#item-page .breadcrumb-container {
+    margin: 20px auto;
+    max-width: 920px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+body#item-page .breadcrumb-link {
+    color: #131963;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body#item-page .breadcrumb-current {
+    color: #6c757d;
+}
+
+/* Título do item */
+body#item-page .item-title-container {
+    text-align: center;
+    margin: 20px auto;
+}
+
+body#item-page .item-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #131963;
+}
+
+/* Slider */
+body#item-page .item-slider-container {
+    max-width: 100%;
+    margin: 20px auto;
+    position: relative;
+}
+
+body#item-page .item-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+body#item-page .slider-image {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+/* Modal */
+body#item-page .modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+body#item-page .modal-content {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+}
+
+body#item-page .close-modal {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Descrição */
+body#item-page .item-description-container {
+    max-width: 920px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
+body#item-page .item-description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #6c757d;
+}
+/* Galeria de Imagens */
+.gallery-image {
+    max-height: 300px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05); /* Leve zoom ao passar o mouse */
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-text {
+    font-size: 14px;
+    color: #6c757d;
+}
+/* Modal personalizado */
+.modal-content {
+    max-width: 80vw; /* Largura máxima de 80% da viewport */
+    max-height: 80vh; /* Altura máxima de 80% da viewport */
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente */
+    border-radius: 10px; /* Borda arredondada para estética */
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.modal-body img {
+    max-width: 100%; /* Imagem ocupa a largura do modal */
+    max-height: 100%; /* Imagem ocupa a altura do modal */
+    object-fit: contain; /* Mantém proporção */
+}
+
+.btn-close {
+    font-size: 1.5rem; /* Tamanho maior do botão de fechar */
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-close:hover {
+    opacity: 0.8;
+}
+
+
+/* FOOTER */
+
+/* Rodapé compartilhado */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #F8F9FA;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 0;
+}
+
+.footer a {
+    color: #131963;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-logo {
+    margin-top: 10px;
+    width: 88.832px;
+    height: 47px;
+}
