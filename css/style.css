@@ -550,3 +550,18 @@ body#item-page .item-description {
     width: 88.832px;
     height: 47px;
 }
+/* Ajusta o espaçamento entre título, card e descrição */
+.custom-spacing h1 {
+    margin-bottom: 10px; /* Reduz o espaçamento abaixo do título */
+}
+
+.custom-spacing .card {
+    margin-top: 10px; /* Reduz o espaçamento acima do card */
+    margin-bottom: 10px; /* Reduz o espaçamento abaixo do card */
+}
+
+.custom-description {
+    margin-top: 10px; /* Reduz o espaçamento acima da descrição */
+    margin-bottom: 0; /* Remove qualquer espaçamento abaixo da descrição */
+    text-align: justify; /* Para um melhor alinhamento da descrição */
+}
