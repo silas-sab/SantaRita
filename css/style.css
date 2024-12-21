@@ -561,7 +561,7 @@ body#item-page .item-description {
 }
 
 .custom-spacing h1 {
-    margin-bottom: 5px; /* Reduz o espaço abaixo do título */
+    margin-bottom: 80px; /* Reduz o espaço abaixo do título */
     font-size: 2rem; /* Ajusta o tamanho da fonte, se necessário */
 }
 
