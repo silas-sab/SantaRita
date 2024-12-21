@@ -399,7 +399,7 @@ body#item-page .breadcrumb-current {
 /* Título do item */
 body#item-page .item-title-container {
     text-align: center;
-    margin: 20px auto;
+    margin: 2px auto;
 }
 
 body#item-page .item-title {
@@ -459,9 +459,9 @@ body#item-page .close-modal {
 /* Descrição */
 body#item-page .item-description-container {
     max-width: 920px;
-    margin: 20px auto;
+    margin: 0px auto;
     text-align: center;
-    padding: 0 10px;
+    padding: 0 100px;
 }
 
 body#item-page .item-description {
