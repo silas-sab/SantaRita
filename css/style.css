@@ -560,12 +560,18 @@ body#item-page .item-description {
     text-align: center; /* Centraliza o texto */
 }
 
+.custom-spacing h1 {
+    margin-bottom: 5px; /* Reduz o espaço abaixo do título */
+    font-size: 2rem; /* Ajusta o tamanho da fonte, se necessário */
+}
+
 .card {
-    margin: 20px auto; /* Centraliza e ajusta o espaçamento */
-    margin-bottom: 20rem;
+    margin: 10px 0; /* Remove espaços extras ao redor do card */
 }
 
 .custom-description {
-    margin-top: 15px; /* Ajusta o espaço acima da descrição */
-    text-align: justify; /* Justifica o texto para uma leitura mais fluida */
+    margin-top: 10px; /* Reduz o espaço acima da descrição */
+    margin-bottom: 0; /* Remove qualquer espaço abaixo da descrição */
+    text-align: justify; /* Justifica o texto, se preferir */
 }
+
