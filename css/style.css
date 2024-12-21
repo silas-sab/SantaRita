@@ -562,6 +562,7 @@ body#item-page .item-description {
 
 .card {
     margin: 20px auto; /* Centraliza e ajusta o espaçamento */
+    margin-bottom: 20rem;
 }
 
 .custom-description {
