@@ -551,17 +551,20 @@ body#item-page .item-description {
     height: 47px;
 }
 /* Ajusta o espaçamento entre título, card e descrição */
-.custom-spacing h1 {
-    margin-bottom: 10px; /* Reduz o espaçamento abaixo do título */
+.custom-spacing {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    min-height: 80vh; /* Garante que ocupe pelo menos 80% da altura da tela */
+    text-align: center; /* Centraliza o texto */
 }
 
-.custom-spacing .card {
-    margin-top: 10px; /* Reduz o espaçamento acima do card */
-    margin-bottom: 10px; /* Reduz o espaçamento abaixo do card */
+.card {
+    margin: 20px auto; /* Centraliza e ajusta o espaçamento */
 }
 
 .custom-description {
-    margin-top: 10px; /* Reduz o espaçamento acima da descrição */
-    margin-bottom: 0; /* Remove qualquer espaçamento abaixo da descrição */
-    text-align: justify; /* Para um melhor alinhamento da descrição */
+    margin-top: 15px; /* Ajusta o espaço acima da descrição */
+    text-align: justify; /* Justifica o texto para uma leitura mais fluida */
 }
